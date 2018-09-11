@@ -166,6 +166,7 @@
     <Folder Include="Distributed Application" />
     <Folder Include="Icons" />
     <Folder Include="Health Model" />
+    <Folder Include="Test" />
     <Folder Include="Service Model" />
     <Folder Include="Presentation" />
   </ItemGroup>

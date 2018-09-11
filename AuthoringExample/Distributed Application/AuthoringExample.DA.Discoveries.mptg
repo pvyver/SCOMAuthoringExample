@@ -1,0 +1,60 @@
+<TemplateGroup>
+  <Instances>
+    <Instance ID="Instancebb4181f7f971400d9f5e9d06e2d96e47" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>AuthoringExampleDAPopulation</Id>
+        <DisplayName>AuthoringExampleDAPopulation</DisplayName>
+        <Description>AuthoringExampleDAPopulation</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;RuleId&gt;$MPElement$&lt;/RuleId&gt;&lt;GroupInstanceId&gt;$Target/Id$&lt;/GroupInstanceId&gt;&lt;MembershipRules&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AuthoringExample.DA.ComponentGroup"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AuthoringExample.DA.contains.AuthoringExample.DA.ComponentGroup"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;/MembershipRules&gt;</DataSourceConfig>
+        <DataSourceType>SC!Microsoft.SystemCenter.GroupPopulator</DataSourceType>
+        <Target>AuthoringExample.DA</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AuthoringExample.DA</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships>
+          <DiscoveryRelationshipItem>
+            <TypeId>AuthoringExample.DA.contains.AuthoringExample.DA.ComponentGroup</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+        </DiscoveryRelationships>
+      </DiscoveryConfig>
+    </Instance>
+    <Instance ID="Instance6566c7908c0b44678c1a24f1962e3aa4" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Id>AuthoringExampleDAComponentGroupPopulation</Id>
+        <DisplayName>AuthoringExampleDAComponentGroupPopulation</DisplayName>
+        <Description>AuthoringExampleDAComponentGroupPopulation</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;RuleId&gt;$MPElement$&lt;/RuleId&gt;&lt;GroupInstanceId&gt;$Target/Id$&lt;/GroupInstanceId&gt;&lt;MembershipRules&gt;&lt;MembershipRule&gt;&lt;MonitoringClass&gt;$MPElement[Name="AuthoringExample.AuthoringExample"]$&lt;/MonitoringClass&gt;&lt;RelationshipClass&gt;$MPElement[Name="AuthoringExample.DA.ComponentGroup.contains.AuthoringExample.AuthoringExample"]$&lt;/RelationshipClass&gt;&lt;/MembershipRule&gt;&lt;/MembershipRules&gt;</DataSourceConfig>
+        <DataSourceType>SC!Microsoft.SystemCenter.GroupPopulator</DataSourceType>
+        <Target>AuthoringExample.DA.ComponentGroup</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AuthoringExample.DA.ComponentGroup</TypeId>
+            <Properties />
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships>
+          <DiscoveryRelationshipItem>
+            <TypeId>AuthoringExample.DA.ComponentGroup.contains.AuthoringExample.AuthoringExample</TypeId>
+            <Properties />
+          </DiscoveryRelationshipItem>
+        </DiscoveryRelationships>
+      </DiscoveryConfig>
+    </Instance>
+  </Instances>
+</TemplateGroup>

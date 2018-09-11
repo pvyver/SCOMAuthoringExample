@@ -1,0 +1,33 @@
+﻿<ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <Categories>
+    <Category ID="AuthoringExample.AuthoringExample.Diagram.Icon.Category" Target="AuthoringExample.AuthoringExample.Diagram.Icon" Value="System!System.Internal.ManagementPack.Images.DiagramIcon" />
+    <Category ID="AuthoringExample.AuthoringExample.Small.Icon.Category" Target="AuthoringExample.AuthoringExample.Small.Icon" Value="System!System.Internal.ManagementPack.Images.u16x16Icon" />
+    <Category ID="AuthoringExample.AuthoringExampleFilerClass.Diagram.Icon.Category" Target="AuthoringExample.AuthoringExampleFilerClass.Diagram.Icon" Value="System!System.Internal.ManagementPack.Images.DiagramIcon" />
+    <Category ID="AuthoringExample.AuthoringExampleFilerClass.Small.Icon.Category" Target="AuthoringExample.AuthoringExampleFilerClass.Small.Icon" Value="System!System.Internal.ManagementPack.Images.u16x16Icon" />
+    <Category ID="AuthoringExample.DA.Diagram.Icon.Category" Target="AuthoringExample.DA.Diagram.Icon" Value="System!System.Internal.ManagementPack.Images.DiagramIcon" />
+    <Category ID="AuthoringExample.DA.Small.Icon.Category" Target="AuthoringExample.DA.Small.Icon" Value="System!System.Internal.ManagementPack.Images.u16x16Icon" />
+  </Categories>
+  <Presentation>
+    <ImageReferences>
+      <ImageReference ElementID="AuthoringExample.AuthoringExample" ImageID="AuthoringExample.AuthoringExample.Diagram.Icon"/>
+      <ImageReference ElementID="AuthoringExample.AuthoringExample" ImageID="AuthoringExample.AuthoringExample.Small.Icon"/>
+      <ImageReference ElementID="AuthoringExample.AuthoringExampleFilerClass" ImageID="AuthoringExample.AuthoringExampleFilerClass.Diagram.Icon"/>
+      <ImageReference ElementID="AuthoringExample.AuthoringExampleFilerClass" ImageID="AuthoringExample.AuthoringExampleFilerClass.Small.Icon"/>
+      <ImageReference ElementID="AuthoringExample.DA" ImageID="AuthoringExample.DA.Diagram.Icon"/>
+      <ImageReference ElementID="AuthoringExample.DA" ImageID="AuthoringExample.DA.Small.Icon"/>
+      <ImageReference ElementID="AuthoringExample.DA.ComponentGroup" ImageID="AuthoringExample.AuthoringExample.Diagram.Icon"/>
+      <ImageReference ElementID="AuthoringExample.DA.ComponentGroup" ImageID="AuthoringExample.AuthoringExample.Small.Icon"/>
+     </ImageReferences>
+  </Presentation>
+  <Resources>
+    <Image ID="AuthoringExample.AuthoringExample.Diagram.Icon" FileName="AuthoringExample.RegClassLarge.png" Accessibility="Public" HasNullStream="false" Comment="AuthoringExample Diagram" />
+    <Image ID="AuthoringExample.AuthoringExample.Small.Icon" FileName="AuthoringExample.RegClassSmall.png" Accessibility="Public" HasNullStream="false" Comment="AuthoringExample Icon Small" />
+    <Image ID="AuthoringExample.AuthoringExampleFilerClass.Diagram.Icon" FileName="AuthoringExampleFilerClassLarge.png" Accessibility="Public" HasNullStream="false" Comment="AuthoringExampleFiler Icon Diagram" />
+    <Image ID="AuthoringExample.AuthoringExampleFilerClass.Small.Icon" FileName="AuthoringExampleFilerClassSmall.png" Accessibility="Public" HasNullStream="false" Comment="AuthoringExampleFiler Icon Small" />
+    <Image ID="AuthoringExample.DA.Diagram.Icon" FileName="AuthoringExampleDALarge.png" Accessibility="Public" HasNullStream="false" Comment="AuthoringExampleDA Icon Diagram" />
+    <Image ID="AuthoringExample.DA.Small.Icon" FileName="AuthoringExampleDASmall.png" Accessibility="Public" HasNullStream="false" Comment="AuthoringExampleDA Icon Small" />
+  </Resources>
+
+
+</ManagementPackFragment>

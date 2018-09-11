@@ -1,0 +1,24 @@
+﻿<ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TypeDefinitions>
+    <EntityTypes>
+      <ClassTypes>
+      <ClassType ID="AuthoringExample.DA" Accessibility="Public" Abstract="false" Base="SCDesignerLib!Microsoft.SystemCenter.ServiceDesigner.GenericService" Hosted="false" Singleton="true" />
+      <ClassType ID="AuthoringExample.DA.ComponentGroup" Accessibility="Public" Abstract="false" Base="SCDesignerLib!Microsoft.SystemCenter.ServiceDesigner.ServiceComponentGroup" Hosted="false" Singleton="true" />
+    </ClassTypes>
+    </EntityTypes>
+  </TypeDefinitions>
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="true">
+      <DisplayStrings>
+        <DisplayString ElementID="AuthoringExample.DA">
+          <Name>AuthoringExample DA</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AuthoringExample.DA.ComponentGroup">
+          <Name>AuthoringExample DA ComponentGroup</Name>
+          <Description></Description>
+        </DisplayString>
+      </DisplayStrings>
+    </LanguagePack>
+  </LanguagePacks>
+</ManagementPackFragment>

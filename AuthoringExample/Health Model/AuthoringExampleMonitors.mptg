@@ -1,0 +1,45 @@
+<TemplateGroup>
+  <Instances>
+    <Instance ID="Instance1cb8bbbf42bb4bd8ba0ce5a2d4aaa2da" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.UnitMonitor" Version="1.0.0.0">
+      <UnitMonitorConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <MonitorType>SC!Microsoft.SystemCenter.PingMonitorType</MonitorType>
+        <MonitorConfig>&lt;Computer&gt;$Target/Property[Type="AuthoringExample.AuthoringExampleFilerClass"]/IPaddress$&lt;/Computer&gt;&lt;ResponseTimeThreshold&gt;10&lt;/ResponseTimeThreshold&gt;&lt;Frequency&gt;60&lt;/Frequency&gt;</MonitorConfig>
+        <MonitorOperationalStates>
+          <OperationalState>
+            <OperationalStateId>Reachable</OperationalStateId>
+            <OperationalStateDisplayName>Reachable</OperationalStateDisplayName>
+            <MonitorTypeStateId>Reachable</MonitorTypeStateId>
+            <HealthState>Success</HealthState>
+          </OperationalState>
+          <OperationalState>
+            <OperationalStateId>SlowResponseTime</OperationalStateId>
+            <OperationalStateDisplayName>SlowResponseTime</OperationalStateDisplayName>
+            <MonitorTypeStateId>SlowResponseTime</MonitorTypeStateId>
+            <HealthState>Warning</HealthState>
+          </OperationalState>
+          <OperationalState>
+            <OperationalStateId>Unreachable</OperationalStateId>
+            <OperationalStateDisplayName>Unreachable</OperationalStateDisplayName>
+            <MonitorTypeStateId>Unreachable</MonitorTypeStateId>
+            <HealthState>Error</HealthState>
+          </OperationalState>
+        </MonitorOperationalStates>
+        <ParentMonitor>Health!System.Health.AvailabilityState</ParentMonitor>
+        <Accessibility>Internal</Accessibility>
+        <Id>FilerICMPPing</Id>
+        <DisplayName>Filer ICMP Ping</DisplayName>
+        <Description>Description for the new unit monitor.</Description>
+        <Target>AuthoringExample.AuthoringExampleFilerClass</Target>
+        <Enabled>true</Enabled>
+        <Category>AvailabilityHealth</Category>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <AlertAutoResolve>true</AlertAutoResolve>
+        <AlertOnState>None</AlertOnState>
+        <AlertPriority>Normal</AlertPriority>
+        <AlertSeverity>MatchMonitorHealth</AlertSeverity>
+        <ConfirmDelivery>false</ConfirmDelivery>
+      </UnitMonitorConfig>
+    </Instance>
+  </Instances>
+</TemplateGroup>

@@ -1,0 +1,26 @@
+﻿<ManagementPackFragment SchemaVersion="2.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TypeDefinitions>
+    <EntityTypes>
+      <ClassTypes>
+        <ClassType ID="AuthoringExample.AuthoringExample" Base="Windows!Microsoft.Windows.LocalApplication" Accessibility="Public" Abstract="false" Hosted="true" Singleton="false">
+          <Property ID="ServerType" Key="false" Type="string" />
+          
+        </ClassType>
+      </ClassTypes>
+    </EntityTypes>
+  </TypeDefinitions>
+  <LanguagePacks>
+    <LanguagePack ID="ENU" IsDefault="true">
+      <DisplayStrings>
+            <DisplayString ElementID="AuthoringExample.AuthoringExample">
+          <Name>AuthoringExample Reg Class</Name>
+          <Description></Description>
+        </DisplayString>
+        <DisplayString ElementID="AuthoringExample.AuthoringExample" SubElementID="ServerType">
+          <Name>ServerType</Name>
+          <Description></Description>
+        </DisplayString>
+      </DisplayStrings>
+    </LanguagePack>
+  </LanguagePacks>
+</ManagementPackFragment>

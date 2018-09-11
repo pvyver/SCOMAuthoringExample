@@ -1,0 +1,51 @@
+<TemplateGroup>
+  <Instances>
+    <Instance ID="Instance5fae257a972b4c4a98314ebaf1b0baca" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.Discovery" Version="1.0.0.0">
+      <DiscoveryConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <Id>AuthoringExampleFilerDiscovery</Id>
+        <DisplayName>AuthoringExampleFilerDiscovery</DisplayName>
+        <Description>Description for the new discovery.</Description>
+        <DataSourceId>DS</DataSourceId>
+        <DataSourceConfig>&lt;IntervalSeconds&gt;86400&lt;/IntervalSeconds&gt;&lt;SyncTime /&gt;&lt;ScriptName&gt;filer.ps1&lt;/ScriptName&gt;&lt;ScriptBody&gt;
+    param($sourceId,$managedEntityID,$computerName)
+
+    $api = New-Object -comObject 'MOM.ScriptAPI'
+    $discoveryData = $api.CreateDiscoveryData(0, $sourceId, $managedEntityID)
+
+    $items = Get-ChildItem HKLM:\SOFTWARE\Contoso\Filer
+
+    foreach ($item in $items)
+    {
+    $instance = $discoveryData.CreateClassInstance("$MPElement[Name='AuthoringExample.AuthoringExampleFilerClass']$")
+    $instance.AddProperty("$MPElement[Name='AuthoringExample.AuthoringExampleFilerClass']/IPaddress$",$item.PSChildName)
+    $instance.AddProperty("$MPElement[Name='Windows!Microsoft.Windows.Computer']/PrincipalName$", $computername)
+    $api.LogScriptEvent("filer.vbs",400, 4, $computerName + " " + $item.PSChildName + " " + $computername)
+    $discoveryData.AddInstance($instance)
+
+    }
+
+    $discoveryData
+  &lt;/ScriptBody&gt;&lt;Parameters&gt;&lt;Parameter&gt;&lt;Name&gt;sourceID&lt;/Name&gt;&lt;Value&gt;$MPElement$&lt;/Value&gt;&lt;/Parameter&gt;&lt;Parameter&gt;&lt;Name&gt;managedEntityID&lt;/Name&gt;&lt;Value&gt;$Target/Id$&lt;/Value&gt;&lt;/Parameter&gt;&lt;Parameter&gt;&lt;Name&gt;computerName&lt;/Name&gt;&lt;Value&gt;$Target/Host/Property[Type="Windows!Microsoft.Windows.Computer"]/PrincipalName$&lt;/Value&gt;&lt;/Parameter&gt;&lt;/Parameters&gt;&lt;TimeoutSeconds&gt;300&lt;/TimeoutSeconds&gt;&lt;StrictErrorHandling&gt;false&lt;/StrictErrorHandling&gt;</DataSourceConfig>
+        <DataSourceType>Windows!Microsoft.Windows.TimedPowerShell.DiscoveryProvider</DataSourceType>
+        <Target>AuthoringExample.AuthoringExample</Target>
+        <Enabled>true</Enabled>
+        <Remotable>true</Remotable>
+        <Priority>Normal</Priority>
+        <ConfirmDelivery>false</ConfirmDelivery>
+        <Category>Discovery</Category>
+        <DiscoveryClasses>
+          <DiscoveryClassItem>
+            <TypeId>AuthoringExample.AuthoringExampleFilerClass</TypeId>
+            <Properties>
+              <DiscoveredTypeProperty>
+                <TypeId>AuthoringExample.AuthoringExampleFilerClass</TypeId>
+                <Property>IPaddress</Property>
+              </DiscoveredTypeProperty>
+            </Properties>
+          </DiscoveryClassItem>
+        </DiscoveryClasses>
+        <DiscoveryRelationships />
+      </DiscoveryConfig>
+    </Instance>
+  </Instances>
+</TemplateGroup>

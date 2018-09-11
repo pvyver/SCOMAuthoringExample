@@ -1,0 +1,46 @@
+<TemplateGroup>
+  <Instances>
+    <Instance ID="Instanceaac2f41d1cd940b795894c063f089c83" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <ViewFolder>AuthoringExample.Folders</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <ViewConfiguration>&lt;Criteria&gt;&lt;SeverityList&gt;&lt;Severity&gt;Green&lt;/Severity&gt;&lt;Severity&gt;Yellow&lt;/Severity&gt;&lt;Severity&gt;Red&lt;/Severity&gt;&lt;Severity&gt;Unknown&lt;/Severity&gt;&lt;/SeverityList&gt;&lt;/Criteria&gt;</ViewConfiguration>
+        <Visible>true</Visible>
+        <Accessibility>Public</Accessibility>
+        <Id>ViewFiler</Id>
+        <DisplayName>Authoring Filer</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AuthoringExample.AuthoringExampleFilerClass</Target>
+        <Category>StateCollection</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance0da6c7116109404ea3bd9bdb382c2fd7" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <ViewFolder>AuthoringExample.Folders</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.StateViewType</ViewType>
+        <ViewConfiguration>&lt;Criteria&gt;&lt;SeverityList&gt;&lt;Severity&gt;Green&lt;/Severity&gt;&lt;Severity&gt;Yellow&lt;/Severity&gt;&lt;Severity&gt;Red&lt;/Severity&gt;&lt;Severity&gt;Unknown&lt;/Severity&gt;&lt;/SeverityList&gt;&lt;/Criteria&gt;</ViewConfiguration>
+        <Visible>true</Visible>
+        <Accessibility>Public</Accessibility>
+        <Id>ViewReg</Id>
+        <DisplayName>Authoring Reg</DisplayName>
+        <Description>Description for the new view</Description>
+        <Target>AuthoringExample.AuthoringExample</Target>
+        <Category>StateCollection</Category>
+      </CustomViewConfig>
+    </Instance>
+    <Instance ID="Instance93e916d752a247c5b0c4f412953b16cb" Type="Microsoft.SystemCenter.Authoring.CodeGeneration.Monitoring.CustomView" Version="1.0.0.0">
+      <CustomViewConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <ViewFolder>AuthoringExample.Folders</ViewFolder>
+        <ViewType>SC!Microsoft.SystemCenter.DiagramViewType</ViewType>
+        <ViewConfiguration>&lt;Presentation&gt;&lt;DiagramViewCriteria&gt;&lt;DiagramViewDisplay ShowVirtualGroup="false"&gt;&lt;NodesPerRow&gt;3&lt;/NodesPerRow&gt;&lt;LevelsToShow&gt;4&lt;/LevelsToShow&gt;&lt;ContainmentLine&gt;&lt;Color /&gt;&lt;SourceArrow IsFilled="false"&gt;&lt;ArrowStyle&gt;NoAnchor&lt;/ArrowStyle&gt;&lt;/SourceArrow&gt;&lt;TargetArrow IsFilled="false"&gt;&lt;ArrowStyle&gt;ArrowAnchor&lt;/ArrowStyle&gt;&lt;/TargetArrow&gt;&lt;/ContainmentLine&gt;&lt;NonContainmentLine&gt;&lt;Color Red="6" Green="134" Blue="253" /&gt;&lt;SourceArrow IsFilled="false"&gt;&lt;ArrowStyle&gt;NoAnchor&lt;/ArrowStyle&gt;&lt;/SourceArrow&gt;&lt;TargetArrow IsFilled="false"&gt;&lt;ArrowStyle&gt;ArrowAnchor&lt;/ArrowStyle&gt;&lt;/TargetArrow&gt;&lt;LineStyle&gt;DashDotDot&lt;/LineStyle&gt;&lt;/NonContainmentLine&gt;&lt;/DiagramViewDisplay&gt;&lt;/DiagramViewCriteria&gt;&lt;/Presentation&gt;</ViewConfiguration>
+        <Visible>true</Visible>
+        <Accessibility>Public</Accessibility>
+        <Id>AuthoringDADiagram</Id>
+        <DisplayName>Authoring DA Diagram</DisplayName>
+        <Description>Authoring DA Diagram</Description>
+        <Target>AuthoringExample.DA</Target>
+        <Category>System</Category>
+      </CustomViewConfig>
+    </Instance>
+  </Instances>
+</TemplateGroup>
